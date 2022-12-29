@@ -3,5 +3,5 @@
 # Database configuration is in the src/Database.php
 
 # For Installation
-  -- run composer install
-  -- run composer dump-autoload -o
+ * -- run composer install
+ * -- run composer dump-autoload -o
