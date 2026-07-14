@@ -4,26 +4,33 @@ A lightweight wrapper to easily bootstrap and use Laravel's Eloquent ORM in any 
 
 ## Installation
 
-Since this package is not published on Packagist, you need to add the GitHub repository to your project's `composer.json` file. 
+To use this package locally without publishing it, you can clone it directly into your project and link it using Composer's path repository feature.
 
-Add the following `repositories` section to your `composer.json`:
+1. Clone the repository into your project (for example, into a `packages/` directory):
+   ```bash
+   mkdir packages
+   cd packages
+   git clone https://github.com/jatin-98/laravel-eloquent-in-php.git
+   cd ..
+   ```
 
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/jatin-98/laravel-eloquent-in-php.git"
-        }
-    ]
-}
-```
+2. Add a `path` repository to your project's `composer.json` to point to the cloned folder:
+   ```json
+   {
+       "repositories": [
+           {
+               "type": "path",
+               "url": "packages/laravel-eloquent-in-php"
+           }
+       ]
+   }
+   ```
 
-Then, you can install the package by running:
-
-```bash
-composer require jatin/eloquent-wrapper:dev-main
-```
+3. Finally, require the package:
+   ```bash
+   composer require jatin/eloquent-wrapper
+   ```
+   *Composer will now automatically symlink the package into your `vendor/` directory and configure the autoloader.*
 
 ## Usage
 
