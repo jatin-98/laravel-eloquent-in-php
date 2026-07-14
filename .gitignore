@@ -1,0 +1,23 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel
+.env
+.env.backup
+.env.testing
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo

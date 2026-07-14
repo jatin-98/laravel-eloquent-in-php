@@ -1,14 +1,11 @@
 {
-    "name": "jatin/chauhan",
+    "name": "jatin/eloquent-wrapper",
     "description": "Implementation of Laravel eloquent",
     "require": {
-        "illuminate/database": "^8.83",
-        "vlucas/phpdotenv": "^5.5"
+        "illuminate/database": "^8.83"
     },
-     "autoload": {
+    "autoload": {
         "psr-4": {
-            "Controllers\\": "app/controllers/",
-            "Models\\": "app/models/",
             "Src\\": "src/"
         }
     }
