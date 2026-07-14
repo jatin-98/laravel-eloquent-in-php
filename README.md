@@ -4,10 +4,25 @@ A lightweight wrapper to easily bootstrap and use Laravel's Eloquent ORM in any 
 
 ## Installation
 
-Install the package via Composer:
+Since this package is not published on Packagist, you need to add the GitHub repository to your project's `composer.json` file. 
+
+Add the following `repositories` section to your `composer.json`:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jatin-98/laravel-eloquent-in-php.git"
+        }
+    ]
+}
+```
+
+Then, you can install the package by running:
 
 ```bash
-composer require jatin/eloquent-wrapper
+composer require jatin/eloquent-wrapper:dev-main
 ```
 
 ## Usage
